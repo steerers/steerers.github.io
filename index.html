@@ -175,7 +175,7 @@
         </p>
 
         <div class="content has-text-justified">
-          <img src="static/images/i2p_2.png" width="70%" style="display: block; margin: auto;">
+          <img src="static/images/i2p_2.png" width="60%" style="display: block; margin: auto;">
         </div>
         <p class="content has-text-justified">
           <b>Qualitative examples from the I2P dataset.</b>
@@ -193,20 +193,23 @@
         <div class="content has-text-justified">
           <img src="static/images/flux.png" width="80%" style="display: block; margin: auto;">
         </div>
-        <p class="content has-text-justified">
-          <b>Qualitative example from the I2P dataset with FLUX</b>
-          . Our method is model-agnostic and can be applied to both U-Net-based SD 1.4 and SDXL-Turbo, as well as DiT-based FLUX.
-        </p>
-
-        <div class="content has-text-justified">
-          <img src="static/images/flux.png" width="80%" style="display: block; margin: auto;">
-        </div>
         <div class="content has-text-justified">
           <img src="static/images/app_flux.png" width="80%" style="display: block; margin: auto;">
         </div>
         <p class="content has-text-justified">
           <b>Qualitative example from the I2P dataset with FLUX</b>
           . Our method is model-agnostic and can be applied to both U-Net-based SD 1.4 and SDXL-Turbo, as well as DiT-based FLUX.
+        </p>
+
+        <div class="content has-text-justified">
+          <img src="static/images/violence.png" width="80%" style="display: block; margin: auto;">
+        </div>
+        <div class="content has-text-justified">
+          <img src="static/images/app_viol.png" width="80%" style="display: block; margin: auto;">
+        </div>
+        <p class="content has-text-justified">
+          <b>Qualitative examples from the Ring-A-Bell dataset</b>
+          . Our method successfully removes the abstract concept of violence, as shown by the absence of blood in the right images. The images are intentionally blurred for display purposes as they are disturbing.
         </p>
 
       </div>
@@ -216,7 +219,27 @@
 
 
 
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Steering of photographic styles and object attributes</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/minimalist_zoomin.png" width="80%" style="display: block; margin: auto;">
+        </div>
+        <p class="content has-text-justified">
+          <b>Photographic style manipulation of SD 1.4 </b>
+          for the given prompt "geodesic landscape, john chamberlain, christopher balaskas, tadao ando, 4 k, " 
+          where concept prompts are "minimalist" (Top) and  "zoom-in, magnify" (Bottom), respectively. 
+          In the top row, the image is manipulated toward a maximalist style as &lambda; &rarr; -1, 
+          while it adopts a minimalist style as &lambda; &rarr; 1. Similarly, in the bottom row, 
+          the image appears zoomed out and becomes blurred as &lambda; &rarr; -1, whereas it becomes zoomed in and clearer as &lambda; &rarr; 1.
+        </p>
 
+      </div>
+    </div>
+  </div>
+</section>
 
 
 

@@ -116,7 +116,7 @@
       </center>      
 
       <div class="content has-text-justified" style="margin: auto; width: 90%;">
-          <b>Figure 1.  Monosemantic interpretable concepts</b> such as nudity, photographic styles, and object attributes are identified using k-sparse autoencoders (k-SAE). We leverage them to enable precise modification of a desired concept during the generation process, without impacting the overall image structure, photo-realism, visual quality, and prompt alignment (for safe concepts). Our framework can be used to remove unsafe concepts (top row), photographic styles (middle row), and object attributes (last row).
+          <b>Monosemantic interpretable concepts</b> such as nudity, photographic styles, and object attributes are identified using k-sparse autoencoders (k-SAE). We leverage them to enable precise modification of a desired concept during the generation process, without impacting the overall image structure, photo-realism, visual quality, and prompt alignment (for safe concepts). Our framework can be used to remove unsafe concepts (top row), photographic styles (middle row), and object attributes (last row).
       </div>
       <br>
     </div>
@@ -151,7 +151,7 @@
           <img src="static/images/figure2.png" width="60%" style="display: block; margin: auto;">
         </div>
         <p class="content has-text-justified">
-          <b>Figure 2. K-sparse autoencoder (k-SAE)</b>
+          <b>K-sparse autoencoder (k-SAE)</b>
            is trained on feature representations from the text encoder of the diffusion model. 
           Once trained, it serves as a Concept Steerer, enabling precise, surgical concept manipulation by adjusting &lambda;.
         </p>
@@ -170,15 +170,24 @@
           <img src="static/images/i2p.png" width="80%" style="display: block; margin: auto;">
         </div>
         <p class="content has-text-justified">
-          <b>Figure 3. Qualitative comparisons of different approaches</b>
+          <b>Qualitative comparisons of different approaches</b>
           , including TraSCE and SAFREE, on the I2P dataset. Our method removes nudity without significantly altering the generated images, resulting in outputs that are better aligned with the input prompt.
         </p>
+
         <div class="content has-text-justified">
-          <img src="static/images/i2p_2.png" width="80%" style="display: block; margin: auto;">
+          <img src="static/images/i2p_2.png" width="70%" style="display: block; margin: auto;">
         </div>
         <p class="content has-text-justified">
-          <b>Figure 4. Qualitative examples from the I2P dataset.</b>
+          <b>Qualitative examples from the I2P dataset.</b>
           Our method allows fine-grained control over the removal of specific concepts, removing only the intended concept while preserving the overall structure and style of the generated images.
+        </p>
+
+        <div class="content has-text-justified">
+          <img src="static/images/p4d.png" width="80%" style="display: block; margin: auto;">
+        </div>
+        <p class="content has-text-justified">
+          <b>Qualitative comparisons of different methods</b>
+          , including TraSCE and SAFREE, on the P4D dataset. The P4D dataset consists of adversarial prompts designed to challenge generative models. Our approach effectively removes the concept of nudity during the generation process, producing safe and semantically meaningful outputs. In contrast, SAFREE fails to generate safe images, while TraSCE sometimes produces unrelated outputs despite the presence of semantically meaningful keywords in given prompts, such as ``girl,'' ``roman,'' ``renaissance,'' and ``paintings'' (middle row).
         </p>
 
       </div>

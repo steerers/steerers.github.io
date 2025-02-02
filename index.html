@@ -244,10 +244,37 @@
           Note that Concept Sliders train specific sliders: winter weather slider and a dark weather slider, whereas our method trains a k-SAE 
           <b>only once</b> for different concepts. <b>Top:</b> "A photo of a tree with a bench, realistic, 8k" with concept to steer = "winter." <b>Bottom:</b> "A photo of a forest, realistic, 8k" with the concept to steer = "low light." Notice how in the top image our method also removes leaves while in the bottom image, our method effectively applies a low-light effect to the original image.
         </p>        
+
+      <div class="content has-text-justified">
+        <img src="static/images/dog.png" width="80%" style="display: block; margin: auto;">
       </div>
+      <p class="content has-text-justified">
+        <b>Image composition manipulation using SDXL-Turbo </b>
+        for the prompt "A dog" with the concept prompt "Full shot." Notice how as &lambda; &rarr; 1, the generated image transitions from a close-up of the face to a full shot.
+      </p>        
+
+      <div class="content has-text-justified">
+        <img src="static/images/car.png" width="80%" style="display: block; margin: auto;">
+      </div>
+      <div class="content has-text-justified">
+        <img src="static/images/tree.png" width="80%" style="display: block; margin: auto;">
+      </div>
+      <p class="content has-text-justified">
+        <b>Object attribute manipulation of SDXL-Turbo </b>
+        for the given prompts "A car" (Top) and "A photo of a tree" (Bottom), where the concept prompts are "A blue car" (Top) and "Tree with autumn leaves" (Bottom). 
+        By adjusting &lambda;, our method transitions the image toward the desired concept specified by the prompts.
+      </p> 
+
+      <div class="content has-text-justified">
+        <img src="static/images/cakes.png" width="80%" style="display: block; margin: auto;">
+      </div>
+      <p class="content has-text-justified">
+        <b>Object attribute manipulation of SDXL-Turbo </b>
+        for the given prompts "A photo of a cake, 4k,"" where the concept prompts are "A chocolate cake," "A white cake," "A lemon cake," and "An orange cake," respectively. 
+        By adjusting &lambda;, our method transitions the image toward the desired concept specified by the prompts.
+      </p> 
 
 
-      
     </div>
   </div>
 </section>
